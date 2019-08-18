@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34EEE27073A95063C2172CE7 /* Pods_Backpressure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C44153D51FA14560717010C /* Pods_Backpressure.framework */; };
 		850A2CA223096E52002884A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2CA123096E52002884A9 /* AppDelegate.swift */; };
 		850A2CA423096E52002884A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A2CA323096E52002884A9 /* ViewController.swift */; };
 		850A2CA723096E52002884A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850A2CA523096E52002884A9 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C44153D51FA14560717010C /* Pods_Backpressure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Backpressure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C759AF624D857829511FEA5 /* Pods-Backpressure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpressure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpressure/Pods-Backpressure.debug.xcconfig"; sourceTree = "<group>"; };
 		850A2C9E23096E52002884A9 /* Backpressure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Backpressure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		850A2CA123096E52002884A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		850A2CA323096E52002884A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		850A2CA823096E53002884A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		850A2CAB23096E53002884A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		850A2CAD23096E53002884A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCA762321AEA2E73DDECF38 /* Pods-Backpressure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpressure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpressure/Pods-Backpressure.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EEE27073A95063C2172CE7 /* Pods_Backpressure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42F3CB4FB5F0CBA2039C82CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C759AF624D857829511FEA5 /* Pods-Backpressure.debug.xcconfig */,
+				AFCA762321AEA2E73DDECF38 /* Pods-Backpressure.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		850A2C9523096E52002884A9 = {
 			isa = PBXGroup;
 			children = (
 				850A2CA023096E52002884A9 /* Backpressure */,
 				850A2C9F23096E52002884A9 /* Products */,
+				42F3CB4FB5F0CBA2039C82CE /* Pods */,
+				8EF0399445F6B3BF4A4D26B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Backpressure;
 			sourceTree = "<group>";
 		};
+		8EF0399445F6B3BF4A4D26B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C44153D51FA14560717010C /* Pods_Backpressure.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 850A2CB023096E53002884A9 /* Build configuration list for PBXNativeTarget "Backpressure" */;
 			buildPhases = (
+				E40B86B1C790C85C30946D92 /* [CP] Check Pods Manifest.lock */,
 				850A2C9A23096E52002884A9 /* Sources */,
 				850A2C9B23096E52002884A9 /* Frameworks */,
 				850A2C9C23096E52002884A9 /* Resources */,
+				F021D73FC3CFCF7691164F8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +154,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E40B86B1C790C85C30946D92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Backpressure-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F021D73FC3CFCF7691164F8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Backpressure/Pods-Backpressure-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Backpressure/Pods-Backpressure-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		850A2C9A23096E52002884A9 /* Sources */ = {
@@ -279,6 +356,7 @@
 		};
 		850A2CB123096E53002884A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C759AF624D857829511FEA5 /* Pods-Backpressure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +374,7 @@
 		};
 		850A2CB223096E53002884A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFCA762321AEA2E73DDECF38 /* Pods-Backpressure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
